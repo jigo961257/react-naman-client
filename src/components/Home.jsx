@@ -19,7 +19,7 @@ function Home() {
 
   const handleConnect = async () => {
     try {
-      const url = `http://${hostname}:${port}/health`; // Assuming your node.js has a /health endpoint
+      const url = `http://${hostname}:${port}`; // Assuming your node.js has a /health endpoint
       const res = await fetch(url);
       if (res.ok) {
         alert('Connection successful!');
